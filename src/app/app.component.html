@@ -1,0 +1,22 @@
+
+<div class="card">
+
+<div class="card-header text-center"> <h4>My ToDo App</h4> </div>
+
+<div class="card-body">
+   <ul class="box">
+	  <li *ngFor="let item of product;">{{item}}<span (click)="removeItem($index)" style="cursor:pointer;" class="cancel">×</span></li>
+   </ul>
+</div>
+
+<div class="card-footer">
+    <div class="form-group d-flex flex-row">
+        <input placeholder="Add your items here" type="text" [(ngModel)]="addMe" class="form-control">
+		<button class="btn btn-outline-success" (click)= "addItem()"> Addition </button>
+    </div>
+</div>
+<p class="w3-text-red">{{errortext}}</p>
+
+</div>
+
+<router-outlet></router-outlet>

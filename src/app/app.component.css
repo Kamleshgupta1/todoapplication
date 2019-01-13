@@ -1,0 +1,45 @@
+.card{
+    text-align:center;
+	margin-top:50px;
+	margin-left:300px;
+    margin-right:300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin:20px;
+  }
+  
+  .form-control{
+	margin-right:10px;
+}
+}
+
+.card-header, .card-footer{
+	color:green;
+}
+
+.form-control{
+	margin-right:20px;
+}
+
+.box{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+.cancel{
+	float:right!important;
+	margin-right:16px!important
+}
+
+li{
+	text-align: left;
+	padding-top:2px;
+	border-bottom:1px solid green;
+}
+
+li:hover{
+	box-shadow: 0 5px 5px rgba(0,0,0,0.4);		
+}
